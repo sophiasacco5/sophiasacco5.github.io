@@ -1,7 +1,7 @@
 body {
     background-color: antiquewhite;
     font-family: Arial, sans-serif;
-    margin: 40 px; 
+    margin: 40px; 
     color: grey;
 }
 
@@ -16,13 +16,13 @@ h1 {
 table{
     width: 100%;
     max-width: 600px;
-    margin: 20 px auto;
+    margin: 20px auto;
     border-collapse: collapse;
     border: 2px sold grey;
 }
 
 th, td {
-    border: 1 px sold grey;
+    border: 1px sold grey;
     padding: 12px;
     text-align: left;
 }
