@@ -22,7 +22,7 @@ table{
 }
 
 th, td {
-    border: 1px sold grey;
+    border: 1px solid grey;
     padding: 12px;
     text-align: left;
 }
