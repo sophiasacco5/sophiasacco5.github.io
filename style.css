@@ -18,7 +18,7 @@ table{
     max-width: 600px;
     margin: 20px auto;
     border-collapse: collapse;
-    border: 2px sold grey;
+    border: 2px solid grey;
 }
 
 th, td {
