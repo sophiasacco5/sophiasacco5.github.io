@@ -18,7 +18,7 @@ table{
     max-width: 1200px;
     margin: 20px auto;
     border-collapse: collapse;
-    border: 2px solid rgb(201, 195, 195);
+    border: 2px solid rgb(223, 156, 211);
 }
 
 th, td {
@@ -28,7 +28,7 @@ th, td {
 }
 
 th {
-    background-color: rgb(221, 215, 215);
+    background-color: rgb(177, 182, 221);
 }
 
 a {
