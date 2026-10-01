@@ -20,8 +20,8 @@ function loadInventory() {
 
         let htmlToInject = "<li>" + currentItem + "</li>";
 
-        //listElemet = listElement +htmlToInject 
-        listElements += htmlToInject;
+        //listElement.innerHTML = listElement +htmlToInject 
+        listElement.innerHTML += htmlToInject;
     }
 
     document.querySelector("button").disabled = true;
