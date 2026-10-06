@@ -44,16 +44,17 @@ h2 {
 
 /* Themed box for adding an item */
 #add-item-form {
-  background-color: #111111;
+  background-color: #f4dfe1;
   border: 2px solid #73000a;
   border-radius: 6px;
   padding: 20px;
-  color: white;
+  color: #111111;
 }
 
 #add-item-form label {
   display: block;
   margin-bottom: 8px;
+  color: #111111;
   font-weight: bold;
 }
 
@@ -63,9 +64,12 @@ h2 {
   margin-bottom: 15px;
   border: 2px solid #73000a;
   border-radius: 4px;
+  color: #111111;
   font-size: 16px;
+  font-weight: bold;
 }
 
+/* Add to Bag button */
 button {
   background-color: #73000a;
   color: white;
