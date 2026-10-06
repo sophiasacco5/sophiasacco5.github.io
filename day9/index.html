@@ -7,15 +7,15 @@
       name="description"
       content="A checklist for keeping track of items in my bag."
     />
-    <title>My Gameday Checklist</title>
+    <title>My Bag Checklist</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
 
   <body>
     <header>
-      <h1>My Gameday Bag Checklist</h1>
+      <h1>My Bag Checklist</h1>
     </header>
 
     <main>
@@ -39,22 +39,8 @@
       <section aria-labelledby="bag-items-heading">
         <h2 id="bag-items-heading">Items in My Bag</h2>
 
-        <ul id="bag-items">
-          <li>
-            <input type="checkbox" id="phone" name="bag-item" />
-            <label for="phone">Phone</label>
-          </li>
-
-          <li>
-            <input type="checkbox" id="wallet" name="bag-item" />
-            <label for="wallet">Wallet</label>
-          </li>
-
-          <li>
-            <input type="checkbox" id="keys" name="bag-item" />
-            <label for="keys">Keys</label>
-          </li>
-        </ul>
+        <!-- JavaScript will add submitted items here -->
+        <ul id="bag-items"></ul>
       </section>
     </main>
   </body>
