@@ -7,9 +7,9 @@
       name="description"
       content="A checklist for keeping track of items in my bag."
     />
-    <title>My Bag Checklist</title>
+    <title>My Gameday Bag Checklist</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
 
@@ -39,8 +39,11 @@
       <section aria-labelledby="bag-items-heading">
         <h2 id="bag-items-heading">Items in My Bag</h2>
 
-        <!-- JavaScript will add submitted items here -->
         <ul id="bag-items"></ul>
+
+        <button type="button" id="remove-button">
+          Remove Checked Items
+        </button>
       </section>
     </main>
   </body>
