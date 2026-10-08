@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@400;600;700;800&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,9 +7,9 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   min-height: 100vh;
-  background-color: #f8f9fc;
+  font-family: "Nunito", Arial, sans-serif;
+  background-color: #f7f8fc;
 }
 
 .container {
@@ -15,42 +17,130 @@ body {
   min-height: 100vh;
 }
 
+/* Sidebar */
+
 .sidebar {
   width: 25%;
   min-height: 100vh;
-  padding: 35px 22px;
-  background-color: #f4dce4;
-  border-right: 4px solid #0b1f3a;
+  padding: 42px 24px;
+  background: linear-gradient(180deg, #f8e4eb 0%, #edb8c9 100%);
+  border-right: 5px solid #102a4c;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 .sidebar h1 {
-  color: #0b1f3a;
-  font-size: 28px;
+  color: #102a4c;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 32px;
+  line-height: 1.1;
   text-align: center;
-  line-height: 1.25;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+}
+
+.sidebar h1::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 4px;
+  margin: 17px auto 0;
+  background-color: #102a4c;
+  border-radius: 10px;
 }
 
 .sidebar button {
   width: 100%;
-  padding: 15px;
-  background-color: white;
-  color: #0b1f3a;
-  border: 2px solid black;
-  border-radius: 8px;
+  padding: 16px 14px;
+  background-color: #ffffff;
+  color: #102a4c;
+  border: 2px solid #111111;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #102a4c;
+  font-family: "Nunito", Arial, sans-serif;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 800;
   cursor: pointer;
-  transition: 0.25s ease;
+  transition: 0.2s ease;
 }
 
 .sidebar button:hover {
-  background-color: #0b1f3a;
+  background-color: #102a4c;
   color: white;
-  transform: translateY(-2px);
+  box-shadow: 2px 2px 0 #111111;
+  transform: translate(2px, 2px);
+}
+
+/* Main content */
+
+.main-content {
+  width: 75%;
+  min-height: 100vh;
+  padding: 80px 10%;
+  background:
+    radial-gradient(circle at top right, #f8dce5 0%, transparent 25%),
+    #f7f8fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-content::before {
+  content: "WEEKLY MEAL PREP";
+  color: #bd5476;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.main-content h2 {
+  max-width: 800px;
+  color: #102a4c;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 54px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.main-content p {
+  max-width: 760px;
+  padding: 28px 30px;
+  background-color: white;
+  color: #3e4653;
+  border-left: 7px solid #e698b2;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(16, 42, 76, 0.12);
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+/* Makes the site easier to use on smaller screens */
+
+@media (max-width: 750px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+    width: 100%;
+  }
+
+  .sidebar {
+    min-height: auto;
+    border-right: none;
+    border-bottom: 5px solid #102a4c;
+  }
+
+  .main-content {
+    min-height: 60vh;
+    padding: 55px 30px;
+  }
+
+  .main-content h2 {
+    font-size: 42px;
+  }
 }
 
 .main-content {
