@@ -1,3 +1,16 @@
+can you give me entire updated css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff7fb;
+  color: #4a2942;
+}
+
 .app-container {
   display: flex;
   min-height: 100vh;
@@ -5,13 +18,57 @@
 
 .sidebar {
   width: 25%;
-  background-color: lightpink;
-  padding: 20px;
-  box-sizing: border-box;
+  min-width: 220px;
+  background-color: #ffc9df;
+  padding: 35px 20px;
+  text-align: center;
+  border-right: 4px solid #e88cb5;
+}
+
+.sidebar h1 {
+  color: #7a2854;
+  font-size: 2rem;
+  margin-bottom: 35px;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  color: #7a2854;
+  border: 2px solid #e88cb5;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar button:hover {
+  background-color: #9b5de5;
+  color: white;
+  border-color: #9b5de5;
+  transform: translateY(-3px);
 }
 
 .main-content {
   width: 75%;
-  padding: 30px;
-  box-sizing: border-box;
+  padding: 55px;
+}
+
+.main-content h2 {
+  color: #9b5de5;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.main-content p {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  box-shadow: 0 4px 12px rgba(122, 40, 84, 0.12);
 }
