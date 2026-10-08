@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To Do List</title>
 
-  <!-- Connects your CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,32 +13,20 @@
     <aside class="sidebar">
       <h1>To Do List</h1>
 
-      <nav>
-        <button class="sidebar-button" data-section="today">Today</button>
-        <button class="sidebar-button" data-section="upcoming">Upcoming</button>
-        <button class="sidebar-button" data-section="completed">Completed</button>
-      </nav>
+      <button onclick="showToday()">Today</button>
+      <button onclick="showUpcoming()">Upcoming</button>
+      <button onclick="showCompleted()">Completed</button>
     </aside>
 
     <main class="main-content">
-      <section id="today" class="content-section">
-        <h2>Today</h2>
-        <p>Here are the tasks you need to complete today.</p>
-      </section>
+      <h2 id="main-header">Today</h2>
 
-      <section id="upcoming" class="content-section">
-        <h2>Upcoming</h2>
-        <p>Here are your upcoming tasks.</p>
-      </section>
-
-      <section id="completed" class="content-section">
-        <h2>Completed</h2>
-        <p>Here are the tasks you have completed.</p>
-      </section>
+      <p id="main-text">
+        Here are the tasks you need to complete today.
+      </p>
     </main>
   </div>
 
-  <!-- Connects your JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
