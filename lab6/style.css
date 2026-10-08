@@ -31,22 +31,28 @@ body {
 }
 
 .sidebar h1 {
-  color: #102a4c;
+  color: #ffffff;
+  background-color: #102a4c;
   font-family: "DM Serif Display", Georgia, serif;
-  font-size: 32px;
-  line-height: 1.1;
+  font-size: 31px;
+  line-height: 1.15;
   text-align: center;
+  padding: 24px 16px;
   margin-bottom: 28px;
+  border: 2px solid #111111;
+  border-radius: 14px;
+  box-shadow: 5px 5px 0 #e698b2;
 }
 
 .sidebar h1::after {
-  content: "";
+  content: "Plan • Prep • Enjoy";
   display: block;
-  width: 65px;
-  height: 4px;
-  margin: 17px auto 0;
-  background-color: #102a4c;
-  border-radius: 10px;
+  color: #f5bfd0;
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-top: 13px;
 }
 
 .sidebar button {
@@ -115,7 +121,7 @@ body {
   line-height: 1.75;
 }
 
-/* Makes the site easier to use on smaller screens */
+/* Mobile design */
 
 @media (max-width: 750px) {
   .container {
@@ -141,25 +147,4 @@ body {
   .main-content h2 {
     font-size: 42px;
   }
-}
-
-.main-content {
-  width: 75%;
-  padding: 70px 60px;
-  background-color: #ffffff;
-}
-
-.main-content h2 {
-  color: #0b1f3a;
-  font-size: 42px;
-  margin-bottom: 22px;
-  border-bottom: 3px solid #e7a9bc;
-  padding-bottom: 12px;
-}
-
-.main-content p {
-  max-width: 750px;
-  color: #3e4653;
-  font-size: 20px;
-  line-height: 1.7;
 }
