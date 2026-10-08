@@ -3,67 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My To Do List</title>
+  <title>Meal Prep Recipes</title>
 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-
-  <div class="app-container">
+  <div class="container">
+    
     <aside class="sidebar">
-      <h1>To Do List</h1>
+      <h1>Meal Prep Recipes for the Week</h1>
 
-      <nav>
-        <button class="sidebar-button active" data-section="today">
-          ☀️ Today
-        </button>
-
-        <button class="sidebar-button" data-section="upcoming">
-          📅 Upcoming
-        </button>
-
-        <button class="sidebar-button" data-section="completed">
-          ✅ Completed
-        </button>
-      </nav>
+      <button onclick="showChickenRice()">Chicken and Rice</button>
+      <button onclick="showAlfredoPasta()">Alfredo Pasta</button>
+      <button onclick="showTacoBowls()">Taco Bowls</button>
     </aside>
 
     <main class="main-content">
-      <p class="welcome-message">Let’s get things done! ✨</p>
+      <h2 id="meal-title">Welcome to Your Meal Prep Plan!</h2>
 
-      <h2 id="main-header">Today</h2>
-      <p id="task-counter">0 tasks left for today.</p>
-
-      <section class="add-task-section">
-        <h3>Add a Task</h3>
-
-        <form id="task-form">
-          <input
-            type="text"
-            id="task-input"
-            placeholder="What do you need to do?"
-            required
-          >
-
-          <select id="category-input">
-            <option value="School">School</option>
-            <option value="Work">Work</option>
-            <option value="Personal">Personal</option>
-            <option value="Shopping">Shopping</option>
-          </select>
-
-          <input type="date" id="date-input">
-
-          <button type="submit" class="add-button">Add Task</button>
-        </form>
-      </section>
-
-      <section class="task-section">
-        <ul id="task-list"></ul>
-      </section>
+      <p id="meal-description">
+        Choose a recipe from the sidebar to see its meal-prep description.
+      </p>
     </main>
-  </div>
 
-  <script src="script.js"></script>
+  </div>
 </body>
 </html>
