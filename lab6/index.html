@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+
+  <!-- We will connect your CSS file here later -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <aside class="sidebar">
+      <h1>To Do List</h1>
+
+      <nav>
+        <button class="sidebar-button" data-section="today">Today</button>
+        <button class="sidebar-button" data-section="upcoming">Upcoming</button>
+        <button class="sidebar-button" data-section="completed">Completed</button>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section id="today" class="content-section">
+        <h2>Today</h2>
+        <p>Here are the tasks you need to complete today.</p>
+      </section>
+
+      <section id="upcoming" class="content-section">
+        <h2>Upcoming</h2>
+        <p>Here are your upcoming tasks.</p>
+      </section>
+
+      <section id="completed" class="content-section">
+        <h2>Completed</h2>
+        <p>Here are the tasks you have completed.</p>
+      </section>
+    </main>
+  </div>
+
+  <!-- We will connect your JavaScript file here later -->
+  <script src="script.js"></script>
+</body>
+</html>
