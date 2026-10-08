@@ -1,20 +1,75 @@
-function showChickenRice() {
-  document.getElementById("meal-title").textContent = "Chicken and Rice";
-
-  document.getElementById("meal-description").textContent =
-    "Chicken and rice is an easy, healthy meal-prep option. Season and bake or grill chicken, then serve it with rice and your favorite vegetables such as broccoli, peppers, or green beans.";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-function showAlfredoPasta() {
-  document.getElementById("meal-title").textContent = "Alfredo Pasta";
-
-  document.getElementById("meal-description").textContent =
-    "Alfredo pasta is a creamy and comforting meal-prep choice. Cook your favorite pasta, mix it with Alfredo sauce, and add grilled chicken and broccoli for extra protein and vegetables.";
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-color: #f8f9fc;
 }
 
-function showTacoBowls() {
-  document.getElementById("meal-title").textContent = "Taco Bowls";
+.container {
+  display: flex;
+  min-height: 100vh;
+}
 
-  document.getElementById("meal-description").textContent =
-    "Taco bowls are simple to customize for the week. Add seasoned ground beef or chicken, rice, beans, corn, salsa, cheese, lettuce, and any other toppings you enjoy.";
+.sidebar {
+  width: 25%;
+  min-height: 100vh;
+  padding: 35px 22px;
+  background-color: #f4dce4;
+  border-right: 4px solid #0b1f3a;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar h1 {
+  color: #0b1f3a;
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.25;
+  margin-bottom: 25px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+  color: #0b1f3a;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.sidebar button:hover {
+  background-color: #0b1f3a;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.main-content {
+  width: 75%;
+  padding: 70px 60px;
+  background-color: #ffffff;
+}
+
+.main-content h2 {
+  color: #0b1f3a;
+  font-size: 42px;
+  margin-bottom: 22px;
+  border-bottom: 3px solid #e7a9bc;
+  padding-bottom: 12px;
+}
+
+.main-content p {
+  max-width: 750px;
+  color: #3e4653;
+  font-size: 20px;
+  line-height: 1.7;
 }
