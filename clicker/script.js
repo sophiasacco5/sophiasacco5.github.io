@@ -13,6 +13,17 @@ function writeCode()
     updateScreen();
 }
 
+function buyKeyboard()
+{
+    if(linesOfCode >= upgradeCost)
+    {
+        linesOfCode = linesOfCode - upgradeCost;
+        clickPower = clickPower +1;
+        upgradeCost = upgradeCost * 1.5;
+        updateScreen();
+    }
+}
+
 function updateScreen()
 {
     document.getElementById("score-display").innertext = linesOfCode + " lines of code";
