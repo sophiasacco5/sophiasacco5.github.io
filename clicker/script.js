@@ -26,10 +26,10 @@ function buyKeyboard()
 
 function buyIntern()
 {
-    if(linesOfCode) >= internCost;
+    if(linesOfCode >= internCost)
     {
         linesOfCode = linesOfCode - internCost;
-        interns = interns +1;
+        interns = interns + 1;
         internCost = internCost * 1.5;
         updateScreen();
     }
@@ -43,7 +43,7 @@ function updateScreen()
     document.getElementById("cost-display").innerText = upgradeCost;
 
     document.getElementById("intern-display").innerText = interns;
-    document.getElementById("cost-intern-display").innerText = internCost;
+    document.getElementById("intern-display-cost").innerText = internCost;
 }
 
 setInterval(function() {
