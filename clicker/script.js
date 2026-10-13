@@ -45,3 +45,13 @@ function updateScreen()
     document.getElementById("intern-display").innerText = interns;
     document.getElementById("cost-intern-display").innerText = internCost;
 }
+
+setInterval(function() {
+    if(interns > 0)
+    {
+        linesOfCode = linesOfCode + interns;
+        updateScreen();
+    }
+}, 
+1000
+);
