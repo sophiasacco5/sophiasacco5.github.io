@@ -7,6 +7,8 @@ let upgradeCost = 50;
 let interns = 0;
 let internCost = 100;
 
+let 
+
 function writeCode() 
 {
     linesOfCode = linesOfCode + clickPower;
