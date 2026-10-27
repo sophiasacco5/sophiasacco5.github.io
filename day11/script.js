@@ -41,7 +41,7 @@ function hitTarget()
 
 function moveTarget()
 {
-    let randomX = Math.floor(Math.random()*550);
+    let randomX = Math.floor(Math.random()* 550);
     let randomY = Math.floor(Math.random()* 350);
 
     targetElement.style.left = randomX + "px";
