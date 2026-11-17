@@ -6,11 +6,11 @@ recipeSearchForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
     if (recipeNumber.value === "1") {
-        window.location.href = "mac-and-cheese.html";
+        window.location.href = "recipe1.html";
     } 
     
     else if (recipeNumber.value === "2") {
-        window.location.href = "spaghetti-meatballs.html";
+        window.location.href = "recipe2.html";
     } 
     
     else {
