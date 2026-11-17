@@ -15,7 +15,7 @@
 
     <main>
         <section class="backstory-section">
-            <h2>Welcome to Recipe Remix!</h2>
+            <h2>Welcome to Recipe Remix! 🍳</h2>
 
             <p>
                 Cooking can be exciting, but figuring out what to make and
@@ -26,17 +26,45 @@
 
             <p>
                 Explore recipes, learn about each meal, and find everything you
-                need in one place—from ingredients to easy step-by-step
-                directions. Whether you are planning a quick dinner, trying a
-                new recipe, or building your grocery list, Recipe Remix is here
-                to help.
+                need in one place. Whether you are planning a quick dinner,
+                trying a new recipe, or building your grocery list, Recipe
+                Remix is here to help.
             </p>
+        </section>
 
-            <p>
-                Ready to find your next favorite meal?
-            </p>
+        <section class="recipe-list-section">
+            <h2>Recipes:</h2>
 
-            <a href="recipes.html" class="start-button">Explore Recipes</a>
+            <ol>
+                <li>
+                    <a href="mac-and-cheese.html">Mac and Cheese</a>
+                </li>
+                <li>
+                    <a href="spaghetti-meatballs.html">Spaghetti and Meatballs</a>
+                </li>
+            </ol>
+        </section>
+
+        <section class="search-section">
+            <h2>Find a Recipe</h2>
+            <p>Enter the recipe number to view its backstory.</p>
+
+            <form id="recipe-search-form">
+                <label for="recipe-number">Recipe Number:</label>
+
+                <input
+                    type="number"
+                    id="recipe-number"
+                    min="1"
+                    max="2"
+                    placeholder="1 or 2"
+                    required
+                >
+
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="search-message"></p>
         </section>
     </main>
 
